@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>정다빈 | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">DB.</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">안녕하세요,</p>
+      <h1 class="hero-name">정다빈</h1>
+      <p class="hero-role">Cybersecurity Student</p>
+      <p class="hero-desc">디지털 세계를 더 안전하게 만들고 싶은 보안 전공 대학생입니다.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-frame">
+            <!-- 같은 폴더에 photo.jpg 파일을 추가하면 자동으로 표시됩니다 -->
+            <img src="photo.jpg" alt="정다빈" class="profile-photo"
+              onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-fallback" style="display:flex;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+              <p>photo.jpg를<br>이 폴더에 추가하세요</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>사이버보안학과를 전공하는 대학생으로, 디지털 위협으로부터 시스템과 사람을 보호하는 것에 관심을 갖고 있습니다.</p>
+          <p>새로운 기술을 꾸준히 배우며 보안 전문가로 성장하기 위해 노력하고 있습니다.</p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">전공</span>
+              <span class="info-value">사이버보안학과</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">관심 분야</span>
+              <span class="info-value">네트워크 보안 / 모의 침투 / 디지털 포렌식</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">이메일</span>
+              <span class="info-value">dabinj346@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">현재 배우고 있는 기술들이에요. 계속 업데이트 됩니다.</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🔐</div>
+          <h3>보안 기초</h3>
+          <p>네트워크 보안 개념, 암호학 기초, 취약점 분석 학습 중</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🖥️</div>
+          <h3>운영체제</h3>
+          <p>Linux / Windows 환경에서의 기본 운영 및 보안 설정</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>네트워크</h3>
+          <p>TCP/IP, 프로토콜 분석, 패킷 캡처 기초</p>
+        </div>
+        <div class="skill-card skill-card-placeholder">
+          <div class="skill-icon">➕</div>
+          <h3>더 추가 예정</h3>
+          <p>배울수록 이 섹션은 채워집니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <h2 class="section-title">Certi<span class="accent">ficates</span></h2>
+      <p class="section-sub">이수한 교육과정 수료증입니다.</p>
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon">📄</div>
+          <div class="cert-info">
+            <h3>민간 SW개발보안 입문과정</h3>
+            <span class="cert-org">건양대학교</span>
+            <span class="cert-year">2022</span>
+          </div>
+          <a href="수료증/[수료증] 2022년 민간SW개발보안 입문과정_건양대학교_정다빈_사이버보안학과.pdf"
+             target="_blank" class="btn-cert">열기</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">📄</div>
+          <div class="cert-info">
+            <h3>나도 코딩 C언어</h3>
+            <span class="cert-org">코딩 교육과정</span>
+            <span class="cert-year">2025</span>
+          </div>
+          <a href="수료증/나도 코딩 C언어_정다빈.pdf"
+             target="_blank" class="btn-cert">열기</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">📄</div>
+          <div class="cert-info">
+            <h3>스마트선박 과정</h3>
+            <span class="cert-org">스마트선박 교육</span>
+            <span class="cert-year">2024</span>
+          </div>
+          <a href="수료증/스마트선박 수료증.pdf"
+             target="_blank" class="btn-cert">열기</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">진행한 프로젝트를 소개합니다.</p>
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- 프로젝트 카드 예시 — 아래 형식을 복사해서 추가하세요 -->
+        <!--
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Security</span>
+          </div>
+          <h3 class="project-title">프로젝트 제목</h3>
+          <p class="project-desc">프로젝트 설명을 여기에 적어주세요.</p>
+          <div class="project-footer">
+            <a href="https://github.com/YOUR_REPO" target="_blank" class="btn-github">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        -->
+
+        <div class="project-placeholder">
+          <div class="placeholder-icon">🚀</div>
+          <p>프로젝트를 준비 중입니다.</p>
+          <span>곧 업데이트될 예정이에요!</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">궁금한 점이 있거나 함께 하고 싶은 프로젝트가 있다면 연락주세요.</p>
+      <div class="contact-links">
+        <a href="mailto:dabinj346@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">dabinj346@gmail.com</span>
+        </a>
+        <a href="https://github.com/" target="_blank" class="contact-card">
+          <span class="contact-icon">🐙</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/dabinj</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 정다빈. Designed & Built with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
